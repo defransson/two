@@ -1,11 +1,13 @@
 var user1="";
 var taskid="";
 var couplename="";
+var idnr;
 $(document).ready(function() {
     	
-    	couplename="test";
-	listtasks();
     	
+            couplename="test";
+	listtasks();
+    	init();
     	$("#addtask").hide();
 
     	$("#user1").click(function(){
@@ -137,3 +139,16 @@ function chart_month(){
         			$("#commontodo").html(result);
     		}});
 }
+/*** Nedanstående funktion kontrollerar om enhetens är klar ***/
+function init(){
+    document.addEventListener("deviceready", onDeviceReady, false);
+}
+
+/*** Nedanstående funktion läser in enhetens id och kör kontrollfunktionen testet ***/
+function onDeviceReady() {
+        
+      idnr = device.uuid;
+      //testet();
+      alert(idnr);
+      
+    }
