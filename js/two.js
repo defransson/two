@@ -143,7 +143,7 @@ function chart_month(){
 function init(){
    idnr = device.uuid;
       //testet();
-      alert(idnr);
+      alert("Hej");
     //document.addEventListener("deviceready", onDeviceReady, false);
 }
 
