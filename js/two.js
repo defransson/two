@@ -144,7 +144,7 @@ function init(){
    idnr = device.uuid;
       //testet();
       alert(idnr);
-    document.addEventListener("deviceready", onDeviceReady, false);
+    //document.addEventListener("deviceready", onDeviceReady, false);
 }
 
 /*** Nedanstående funktion läser in enhetens id och kör kontrollfunktionen testet ***/
