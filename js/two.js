@@ -141,7 +141,7 @@ function chart_month(){
 }
 /*** Nedanstående funktion kontrollerar om enhetens är klar ***/
 function init(){
-   idnr = device.uuid;
+   //idnr = device.uuid;
       //testet();
       alert("Hej");
     //document.addEventListener("deviceready", onDeviceReady, false);
