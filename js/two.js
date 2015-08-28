@@ -149,7 +149,7 @@ function init(){
 
 /*** Nedanstående funktion läser in enhetens id och kör kontrollfunktionen testet ***/
 function onDeviceReady() {
-        
+        alert("Hej!");
       idnr = device.uuid;
       //testet();
       alert(idnr);
