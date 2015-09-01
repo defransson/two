@@ -7,7 +7,7 @@ $(document).ready(function() {
     	
             couplename="test";
 	listtasks();
-    	//init();
+    	init();
     	$("#addtask").hide();
 
     	$("#user1").click(function(){
@@ -143,7 +143,7 @@ function chart_month(){
 function init(){
    //idnr = device.uuid;
       //testet();
-      alert"hej");
+      alert("hej");
     //document.addEventListener("deviceready", onDeviceReady, false);
 }
 
