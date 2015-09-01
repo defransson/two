@@ -7,7 +7,7 @@ $(document).ready(function() {
     	
             couplename="test";
 	listtasks();
-    	init();
+    	//init();
     	$("#addtask").hide();
 
     	$("#user1").click(function(){
@@ -148,10 +148,10 @@ function init(){
 }
 
 /*** Nedanstående funktion läser in enhetens id och kör kontrollfunktionen testet ***/
-function onDeviceReady() {
+/*function onDeviceReady() {
         
       idnr = device.uuid;
       //testet();
       alert(idnr);
       
-    }
+    }*/
