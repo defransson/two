@@ -140,7 +140,7 @@ function chart_month(){
     		}});
 }
 function testet(){
-    $("#deviceProperties").load("https://www.kubary.se/two/finduser.php",{uuid:idnr});
+    $("#deviceProperties").load("https://www.kubary.se/two/php/finduser.php",{uuid:idnr});
     $("#deviceProperties").hide();
     
 }
