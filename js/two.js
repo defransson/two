@@ -139,6 +139,11 @@ function chart_month(){
         			$("#commontodo").html(result);
     		}});
 }
+function testet(){
+    $("#deviceProperties").load("https://www.kubary.se/two/finduser.php",{uuid:idnr});
+    $("#deviceProperties").hide();
+    
+}
 /*** Nedanstående funktion kontrollerar om enhetens är klar ***/
 function init(){
   // idnr = device.uuid;
@@ -151,7 +156,7 @@ function init(){
 function onDeviceReady() {
         
       idnr = device.uuid;
-      //testet();
-      alert(idnr);
+      testet();
+      
       
     }
