@@ -1,4 +1,5 @@
 var user1="";
+var user2="";
 var taskid="";
 var couplename="";
 var idnr;
@@ -6,7 +7,7 @@ $(document).ready(function() {
     	
     	
             couplename="test";
-	listtasks();
+	//listtasks();
     	init();
     	$("#addtask").hide();
 
