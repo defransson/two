@@ -38,7 +38,7 @@ function listtasks(){
 	$("#commontodo").load("https://www.kubary.se/two/php/listtasks.php",{couple:couplename});
 }
 function init_click(){
-	user1="test1";
+	
 	
 	$("#addtask").hide();
 	$(".new").click(function(){
@@ -99,6 +99,14 @@ function init_click(){
     		
     		
     	});
+                $("#loginbutton").click(function(){
+                   $.ajax({
+                    url: "https://www.kubary.se/two/php/loginform.php", 
+                    success: function(result){
+                            $("#commontodo").html(result);
+                    }});
+            
+        });
 }
 function grabtask(){
 	
