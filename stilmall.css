@@ -77,3 +77,6 @@ img{
 #chart_week{
 text-decoration: underline;
 }
+label{
+	width: 100px;
+}
