@@ -178,6 +178,6 @@ function onDeviceReady() {
     <input name='mypassword' type='password' id='mypassword' maxlength='100'>
     <button id='checkloginbutton' type='button'>Login</button>
 </form>");*/
-$("#commontodo").html("Kalle");
+$("#commontodo").html("<strong>Kalle</strong>");
         init_click();
     }
