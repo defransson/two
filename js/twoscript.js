@@ -173,10 +173,11 @@ function onDeviceReady() {
       
     }
     function loginform(){
-        $("#commontodo").html("<form>
+       /* $("#commontodo").html("<form>
     <input name='myusername' type='text' id='myusername' maxlength='30' autocomplete='off'>
     <input name='mypassword' type='password' id='mypassword' maxlength='100'>
     <button id='checkloginbutton' type='button'>Login</button>
-</form>");
+</form>");*/
+$("#commontodo").html("Kalle");
         init_click();
     }
