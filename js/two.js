@@ -100,12 +100,13 @@ function init_click(){
     		
     	});
                 $("#loginbutton").click(function(){
-                   $.ajax({
+                   /*$.ajax({
                     url: "https://www.kubary.se/two/php/loginform.php", 
                     success: function(result){
                             $("#commontodo").html(result);
-                    }});
-            
+                    }});*/
+                    //$("#commontodo").html("result");
+                    alert("HEJ");
         });
 }
 function grabtask(){
@@ -151,6 +152,7 @@ function chart_month(){
 }
 function testet(){
     $("#commontodo").load("https://www.kubary.se/two/php/finduser.php",{uuid:idnr});
+    init_click();
     $("#deviceProperties").hide();
     
 }
