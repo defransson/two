@@ -176,15 +176,24 @@ function onDeviceReady() {
       
     }
     function loginform(){
-        $("#commontodo").html("<form> <label for='myusername'>Username</label> <input name='myusername' type='text' id='myusername' maxlength='30' autocomplete='off'> <br><label for='mypassword'>Password</label><input name='mypassword' type='password' id='mypassword' maxlength='100'> <br><button id='checkloginbutton' type='button'>Login</button> </form>");
+        $("#commontodo").html("<form> <label for='myusername'>Email</label> <input name='myusername' type='text' id='myusername' maxlength='30' autocomplete='off'><p id='userremind'>Please input email</p> <br><label for='mypassword'>Password</label><input name='mypassword' type='password' id='mypassword' maxlength='100'> <p id='passremind'>Please input password</p><br><button id='checkloginbutton' type='button'>Login</button> </form>");
 //$("#commontodo").html("<strong>Kalle</strong>");
         init_click();
+        $("#userremind").hide();
+        $("#passremind").hide();
     }
     function checklogin(){
        var username=$("#myusername").val();
        var password=$("#mypassword").val();
       if((username!="")&&(password!=""))
             alert(username);
+        else
+            {
+                if(username="")
+                    $("#userremind").show();
+                if(password="")
+                    $("#passremind").show();
+            }
         
 
     }
