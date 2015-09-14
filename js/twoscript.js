@@ -182,6 +182,9 @@ function onDeviceReady() {
     }
     function checklogin(){
        var username=$("#myusername").val();
-      if(username!="")
+       var password=$("#mypassword").val();
+      if(username!="")&&(password!="")
             alert(username);
+        
+
     }
