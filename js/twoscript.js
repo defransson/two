@@ -183,5 +183,5 @@ function onDeviceReady() {
     function checklogin(){
        var username=$("#myusername").html();
       
-            alert("Kalle");
+            alert(username);
     }
