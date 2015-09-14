@@ -108,6 +108,9 @@ function init_click(){
                     //$("#commontodo").html("result");
                     loginform();
             });
+                $("#checkloginbutton").click(function(){
+                    checklogin();
+             });
 }
 function grabtask(){
 	
@@ -176,4 +179,8 @@ function onDeviceReady() {
         $("#commontodo").html("<form> <label for='myusername'>Username</label> <input name='myusername' type='text' id='myusername' maxlength='30' autocomplete='off'> <br><label for='mypassword'>Password</label><input name='mypassword' type='password' id='mypassword' maxlength='100'> <br><button id='checkloginbutton' type='button'>Login</button> </form>");
 //$("#commontodo").html("<strong>Kalle</strong>");
         init_click();
+    }
+    function checklogin(){
+        if($("#myusername").html()!="")
+            alert("Kalle");
     }
