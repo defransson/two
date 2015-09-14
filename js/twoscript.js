@@ -181,6 +181,7 @@ function onDeviceReady() {
         init_click();
     }
     function checklogin(){
-        if($("#myusername").html()!="")
+       var username=$("#myusername").html();
+      
             alert("Kalle");
     }
