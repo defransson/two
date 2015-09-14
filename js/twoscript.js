@@ -182,6 +182,6 @@ function onDeviceReady() {
     }
     function checklogin(){
        var username=$("#myusername").val();
-      
+      if(username!="")
             alert(username);
     }
