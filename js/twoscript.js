@@ -134,7 +134,7 @@ function finish_task(){
 function list_user_tasks(){
 	$.ajax({
     		url: "https://www.kubary.se/two/php/listusertasks.php", 
-                            data:{user: user1},
+                            data:{user: user1, couple: couplename},
     		success: function(result){
         			$("#commontodo").html(result);
     		}});
@@ -188,10 +188,7 @@ function onDeviceReady() {
        var username=$("#myusername").val();
        var password=$("#mypassword").val();
       if((username!="")&&(password!="")){
-            alert(username);
-            alert(password);
-            alert(idnr);
-            $.ajax({
+           $.ajax({
             url: "https://www.kubary.se/two/php/checklogin.php", 
                             data:{ user: username, pass: password, uuid: idnr },
             success: function(result){
