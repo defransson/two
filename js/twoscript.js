@@ -3,6 +3,7 @@ var user2="";
 var taskid="";
 var couplename="";
 var idnr;
+var color='0';
 $(document).ready(function() {
     	
     	
