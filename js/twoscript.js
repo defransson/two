@@ -212,12 +212,13 @@ function onDeviceReady() {
 
     }
      function add_user(){
-       $("#userremind").hide();
+       //$("#userremind").hide();
         $("#passremind").hide();
         $("#passconfremind").hide();
        var username=$("#myusername").val();
        var password=$("#mypassword").val();
        var passwordconf=$("#mypasswordconf").val();
+     
       if((username!="")&&(password!="")&&(passwordconf!="")){
            $.ajax({
             url: "https://www.kubary.se/two/php/adduser.php", 
