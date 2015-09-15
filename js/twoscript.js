@@ -212,7 +212,7 @@ function onDeviceReady() {
 
     }
      function add_user(){
-       //$("#userremind").hide();
+       $("#userremind").hide();
         $("#passremind").hide();
         $("#passconfremind").hide();
        var username=$("#myusername").val();
@@ -235,7 +235,7 @@ function onDeviceReady() {
                     $("#userremind").show();
                 if(password=="")
                     $("#passremind").show();
-                if(password=="")
+                if(passwordconf=="")
                     $("#passconfremind").show();
             }
         
