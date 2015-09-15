@@ -215,19 +215,22 @@ function onDeviceReady() {
        $("#userremind").hide();
         $("#passremind").hide();
         $("#passconfremind").hide();
+        $('#passmatch').hide();
        var username=$("#myusername").val();
        var password=$("#mypassword").val();
        var passwordconf=$("#mypasswordconf").val();
      
       if((username!="")&&(password!="")&&(passwordconf!="")){
+            if(password==passwordconf){
            $.ajax({
             url: "https://www.kubary.se/two/php/adduser.php", 
                             data:{ user: username, pass: password, uuid: idnr },
             success: function(result){
                     $("#commontodo").html(result);
             }});
-            
-            
+            }
+            else
+                 $('#passmatch').show();
         }
         else
             {
