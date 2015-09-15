@@ -211,7 +211,7 @@ function onDeviceReady() {
         
 
     }
-     function checklogin(){
+     function add_user(){
        $("#userremind").hide();
         $("#passremind").hide();
         $("#passconfremind").hide();
