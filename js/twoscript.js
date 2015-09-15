@@ -187,7 +187,7 @@ function onDeviceReady() {
         $("#passremind").hide();
        var username=$("#myusername").val();
        var password=$("#mypassword").val();
-      if((username!="")&&(password!=""))
+      if((username!="")&&(password!="")){
             $.post('https://www.kubary.se/two/php/checklogin.php',
                 {
                     user: username,
@@ -196,6 +196,7 @@ function onDeviceReady() {
                     
                 });
             listtasks();
+        }
         else
             {
                 if(username=="")
