@@ -150,6 +150,7 @@ function chart_week(){
 function chart_month(){
 	$.ajax({
     		url: "https://www.kubary.se/two/php/chart_month.php", 
+                            data:{usera: user1, userb:user2, couple: couplename},
     		success: function(result){
         			$("#commontodo").html(result);
     		}});
