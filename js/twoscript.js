@@ -101,12 +101,7 @@ function init_click(){
     		
     	});
                 $("#loginbutton").click(function(){
-                   /*$.ajax({
-                    url: "https://www.kubary.se/two/php/loginform.php", 
-                    success: function(result){
-                            $("#commontodo").html(result);
-                    }});*/
-                    //$("#commontodo").html("result");
+                  
                     loginform();
             });
                 $("#checkloginbutton").click(function(){
@@ -114,6 +109,9 @@ function init_click(){
              });
             $("#registerbutton").click(function(){
                     $("#commontodo").load("https://www.kubary.se/two/php/addform.php");
+             });
+            $("#registerconfirm").click(function(){
+                    add_user();
              });
 }
 function grabtask(){
@@ -209,6 +207,35 @@ function onDeviceReady() {
                     $("#userremind").show();
                 if(password=="")
                     $("#passremind").show();
+            }
+        
+
+    }
+     function checklogin(){
+       $("#userremind").hide();
+        $("#passremind").hide();
+        $("#passconfremind").hide();
+       var username=$("#myusername").val();
+       var password=$("#mypassword").val();
+       var passwordconf=$("#mypasswordconf").val();
+      if((username!="")&&(password!="")&&(passwordconf!="")){
+           $.ajax({
+            url: "https://www.kubary.se/two/php/adduser.php", 
+                            data:{ user: username, pass: password, uuid: idnr },
+            success: function(result){
+                    $("#commontodo").html(result);
+            }});
+            
+            
+        }
+        else
+            {
+                if(username=="")
+                    $("#userremind").show();
+                if(password=="")
+                    $("#passremind").show();
+                if(password=="")
+                    $("#passconfremind").show();
             }
         
 
