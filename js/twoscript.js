@@ -112,6 +112,9 @@ function init_click(){
                 $("#checkloginbutton").click(function(){
                     checklogin();
              });
+            $("#registerbutton").click(function(){
+                    $("#commontodo").load("https://www.kubary.se/two/php/addform.php");
+             });
 }
 function grabtask(){
 	
