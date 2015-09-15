@@ -142,6 +142,7 @@ function list_user_tasks(){
 function chart_week(){
 	$.ajax({
     		url: "https://www.kubary.se/two/php/chart_week.php", 
+                            data:{usera: user1, userb:user2, couple: couplename},
     		success: function(result){
         			$("#commontodo").html(result);
     		}});
