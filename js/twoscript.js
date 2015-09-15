@@ -188,13 +188,12 @@ function onDeviceReady() {
        var username=$("#myusername").val();
        var password=$("#mypassword").val();
       if((username!="")&&(password!="")){
+            alert(username);
+            alert(password);
+            alert(idnr);
             $.ajax({
             url: "https://www.kubary.se/two/php/checklogin.php", 
-                            data:{
-                                user: username,
-                                pass: password,
-                                uuid: idnr
-                            },
+                            data:{ user: username, pass: password, uuid: idnr },
             success: function(result){
                     $("#commontodo").html(result);
             }});
