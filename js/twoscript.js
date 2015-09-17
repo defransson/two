@@ -283,9 +283,9 @@ function onDeviceReady() {
  
             options.params = params;
             options.chunkedMode = false;
- 
+            alert(options);
             var ft = new FileTransfer();
-            ft.upload(imageURI, "https:/www.kubary.se/two/php/upload.php", win, fail, options);
+            ft.upload(imageURI, "http:/www.kubary.se/two/php/upload.php", win, fail, options);
         }
  
         function win(r) {
