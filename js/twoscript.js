@@ -313,8 +313,10 @@ function onDeviceReady() {
 function uploadPhoto(imageURI) {
     var options = new FileUploadOptions();
     options.fileKey="file";
-    options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1)+'.png';
-    options.mimeType="text/plain";
+    /*options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1)+'.png';
+    options.mimeType="text/plain";*/
+    options.fileKey="file";
+            options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
     options.headers = {
     Connection: "close"
     }
