@@ -54,12 +54,26 @@ img{
 	width:50px;
 	border-radius: 100%;
 	padding:2px;
+	height:50px;
 }
 .orange{
 	border: 2px solid #f37545;
+	
 }
 .green{
 	border: 2px solid #a6c69d;
+
+}
+
+.greenfill{
+	background-color: #a6c69d;
+}
+.orangefill{
+	background-color: #f37545;
+}
+.ball{
+	display: inline-block;
+	margin: 5px;
 }
 .confirmtask, .finishtask{
 	color:green;
