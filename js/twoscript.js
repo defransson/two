@@ -319,7 +319,7 @@ function uploadPhoto(imageURI) {
     options.params = params;
 
     var ft = new FileTransfer();
-    ft.upload(imageURI, encodeURI("http://some.server.com/upload.php"), win, fail, options);
+    ft.upload(imageURI, encodeURI("https:/www.kubary.se/two/php/upload.php"), win, fail, options);
 }
 
 function win(r) {
