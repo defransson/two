@@ -114,7 +114,7 @@ function init_click(){
                     add_user();
              });
              $("#avatar").click(function(){
-                    uploadFromGallery();
+                    getImage();
              });
              $("#color1").click(function(){
                    $('#color0').removeClass('green');
@@ -256,7 +256,7 @@ function onDeviceReady() {
         
 
     }
-  /*  function getImage() {
+   function getImage() {
             // Retrieve image file location from specified source
             navigator.camera.getPicture(uploadPhoto, function(message) {
             alert('get picture failed');
@@ -274,7 +274,9 @@ function onDeviceReady() {
             options.fileKey="file";
             options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
             options.mimeType="image/jpeg";
- 
+            options.headers = {
+                Connection: "close"
+            }
             var params = new Object();
             params.value1 = "test";
             params.value2 = "param";
@@ -295,8 +297,8 @@ function onDeviceReady() {
  
         function fail(error) {
             alert("An error has occurred: Code = " = error.code);
-        }*/
-        function uploadFromGallery() {
+        }
+        /*function uploadFromGallery() {
 
     // Retrieve image file location from specified source
     navigator.camera.getPicture(uploadPhoto,
@@ -313,11 +315,14 @@ function uploadPhoto(imageURI) {
     options.fileKey="file";
     options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1)+'.png';
     options.mimeType="text/plain";
-
+    options.headers = {
+    Connection: "close"
+    }
+    options.chunkedMode = false;
     var params = new Object();
 
     options.params = params;
-options.chunkedMode = false;
+
     var ft = new FileTransfer();
     ft.upload(imageURI, encodeURI("https:/www.kubary.se/two/php/upload.php"), win, fail, options);
 }
@@ -332,4 +337,4 @@ function fail(error) {
     alert("An error has occurred: Code = " + error.code);
     console.log("upload error source " + error.source);
     console.log("upload error target " + error.target);
-}
+}*/
