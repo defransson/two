@@ -33,6 +33,11 @@ img{
 	display: block;
 
 }
+.center{
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
 /*#contentcenter{
 	width:80%;
 	margin-right: 10%;
@@ -55,6 +60,12 @@ img{
 	border-radius: 100%;
 	padding:2px;
 	height:50px;
+}
+.avatarimg{
+	width:80px;
+	border-radius: 100%;
+	padding:2px;
+	height:80px;
 }
 .orange{
 	border: 2px solid #f37545;
