@@ -247,7 +247,7 @@ function onDeviceReady() {
         
 
     }
-    function getImage() {
+  /*  function getImage() {
             // Retrieve image file location from specified source
             navigator.camera.getPicture(uploadPhoto, function(message) {
             alert('get picture failed');
@@ -286,4 +286,4 @@ function onDeviceReady() {
  
         function fail(error) {
             alert("An error has occurred: Code = " = error.code);
-        }
+        }*/
