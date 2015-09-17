@@ -114,7 +114,7 @@ function init_click(){
                     add_user();
              });
              $("#avatar").click(function(){
-                    uploadFromGallery();
+                    getImage();
              });
              $("#color1").click(function(){
                    $('#color0').removeClass('green');
@@ -256,7 +256,7 @@ function onDeviceReady() {
         
 
     }
-  /* function getImage() {
+  function getImage() {
             // Retrieve image file location from specified source
             navigator.camera.getPicture(uploadPhoto, function(message) {
             alert('get picture failed');
@@ -297,8 +297,8 @@ function onDeviceReady() {
  
         function fail(error) {
             alert("An error has occurred: Code = " = error.code);
-        }*/
-        function uploadFromGallery() {
+        }
+/*        function uploadFromGallery() {
 
     // Retrieve image file location from specified source
     navigator.camera.getPicture(uploadPhoto,
@@ -313,10 +313,8 @@ function onDeviceReady() {
 function uploadPhoto(imageURI) {
     var options = new FileUploadOptions();
     options.fileKey="file";
-    /*options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1)+'.png';
-    options.mimeType="text/plain";*/
-    options.fileKey="file";
-            options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
+    options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1)+'.png';
+    options.mimeType="text/plain";
     options.headers = {
     Connection: "close"
     }
@@ -339,4 +337,4 @@ function fail(error) {
     alert("An error has occurred: Code = " + error.code);
     console.log("upload error source " + error.source);
     console.log("upload error target " + error.target);
-}
+}*/
