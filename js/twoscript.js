@@ -114,7 +114,7 @@ function init_click(){
                     add_user();
              });
              $("#avatar").click(function(){
-                    uploadFromGallery();
+                    alert("Kalle");
              });
 }
 function grabtask(){
