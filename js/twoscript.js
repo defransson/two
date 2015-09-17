@@ -283,7 +283,7 @@ function onDeviceReady() {
  
             options.params = params;
             options.chunkedMode = false;
-            alert(options);
+            alert(imageURI);
             var ft = new FileTransfer();
             ft.upload(imageURI, "http:/www.kubary.se/two/php/upload.php", win, fail, options);
         }
