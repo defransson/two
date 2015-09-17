@@ -123,6 +123,7 @@ function init_click(){
               $("#color0").click(function(){
                    $('#color0').addClass('green');
                     $('#color1').removeClass('orange');
+                    //jdsfsdf
              });
 }
 function grabtask(){
