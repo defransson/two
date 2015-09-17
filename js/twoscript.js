@@ -114,7 +114,15 @@ function init_click(){
                     add_user();
              });
              $("#avatar").click(function(){
-                    alert("Kalle");
+                    uploadFromGallery();
+             });
+             $("#color1").click(function(){
+                   $('#color0').removeClass('green');
+                    $('#color1').addClass('orange');
+             });
+              $("#color0").click(function(){
+                   $('#color0').addClass('green');
+                    $('#color1').removeClass('orange');
              });
 }
 function grabtask(){
