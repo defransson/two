@@ -1,5 +1,7 @@
 var user1="";
 var user2="";
+var email1="";
+var email2="";
 var taskid="";
 var couplename="";
 var idnr;
@@ -7,9 +9,8 @@ var color='0';
 $(document).ready(function() {
     	
     	
-            couplename="test";
-	//listtasks();
-    	init();
+            
+	init();
     	$("#addtask").hide();
 
     	$("#user1").click(function(){
@@ -228,7 +229,7 @@ function onDeviceReady() {
         $("#passremind").hide();
         $("#passconfremind").hide();
         $('#passmatch').hide();
-       var username=$("#myusername").val();
+       email1=$("#myusername").val();
        var password=$("#mypassword").val();
        var passwordconf=$("#mypasswordconf").val();
      
@@ -236,7 +237,7 @@ function onDeviceReady() {
             if(password==passwordconf){
            $.ajax({
             url: "https://www.kubary.se/two/php/adduser.php", 
-                            data:{ user: username, pass: password, uuid: idnr },
+                            data:{ user: email1, pass: password, uuid: idnr },
             success: function(result){
                     $("#commontodo").html(result);
             }});
@@ -292,7 +293,8 @@ function onDeviceReady() {
             console.log("Code = " + r.responseCode);
             console.log("Response = " + r.response);
             console.log("Sent = " + r.bytesSent);
-            alert(r.response);
+            //alert(r.response);
+            set_avatar();
         }
  
         function fail(error) {
@@ -338,3 +340,12 @@ function fail(error) {
     console.log("upload error source " + error.source);
     console.log("upload error target " + error.target);
 }*/
+ function set_avatar() {
+        $.ajax({
+            url: "https://www.kubary.se/two/php/getavatar.php", 
+                            data:{ user: email1},
+            success: function(result){
+                    $("#avatar").attr('src',result);
+            }});
+
+    }
