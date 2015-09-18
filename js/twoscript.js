@@ -247,7 +247,7 @@ function onDeviceReady() {
         }
         else
             {
-                if(username=="")
+                if(email1=="")
                     $("#userremind").show();
                 if(password=="")
                     $("#passremind").show();
