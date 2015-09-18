@@ -294,7 +294,7 @@ function onDeviceReady() {
             console.log("Response = " + r.response);
             console.log("Sent = " + r.bytesSent);
             alert(r.response);
-            set_avatar();
+            //set_avatar();
         }
  
         function fail(error) {
