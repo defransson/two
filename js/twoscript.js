@@ -233,7 +233,7 @@ function onDeviceReady() {
        var password=$("#mypassword").val();
        var passwordconf=$("#mypasswordconf").val();
      
-      if((username!="")&&(password!="")&&(passwordconf!="")){
+      if((email1!="")&&(password!="")&&(passwordconf!="")){
             if(password==passwordconf){
            $.ajax({
             url: "https://www.kubary.se/two/php/adduser.php", 
