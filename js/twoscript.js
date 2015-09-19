@@ -342,6 +342,8 @@ function fail(error) {
     console.log("upload error target " + error.target);
 }*/
  function set_avatar() {
+         $kalle=$("#avatar").attr('src');
+                    alert(kalle);
         $.ajax({
             url: "https://www.kubary.se/two/php/getavatar.php", 
                             data:{ user: email1},
