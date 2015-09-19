@@ -299,9 +299,9 @@ function onDeviceReady() {
             set_avatar();
         }
  
-        function fail(error) {
+       /* function fail(error) {
             alert("An error has occurred: Code = " = error.code);
-        }
+        } */
 /*        function uploadFromGallery() {
 
     // Retrieve image file location from specified source
