@@ -116,11 +116,12 @@ function init_click(){
              });
              $("#avatar").click(function(){
                     getImage();
+
             });
              $("#color1").click(function(){
-                   //$('#color0').removeClass('green');
-                    $//('#color1').addClass('orange');
-                    set_avatar();
+                   $('#color0').removeClass('green');
+                    $('#color1').addClass('orange');
+                    //set_avatar();
              });
               $("#color0").click(function(){
                    $('#color0').addClass('green');
@@ -295,7 +296,7 @@ function onDeviceReady() {
             console.log("Response = " + r.response);
             console.log("Sent = " + r.bytesSent);
             alert(r.response);
-            //set_avatar();
+            set_avatar();
         }
  
         function fail(error) {
@@ -342,15 +343,12 @@ function fail(error) {
     console.log("upload error target " + error.target);
 }*/
  function set_avatar() {
-         var kalle=$("#avatar").attr('src');
-                    alert(kalle);
-        $.ajax({
+          $.ajax({
             url: "https://www.kubary.se/two/php/getavatar.php", 
                             data:{ user: email1},
             success: function(result){
                     $("#avatar").attr('src',result);
-                    kalle=$("#avatar").attr('src');
-                    alert(kalle);
+                    $("#user1 img").attr('src',result);
             }});
 
     }
