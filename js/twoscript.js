@@ -116,7 +116,9 @@ function init_click(){
              });
              $("#avatar").click(function(){
                     getImage();
-                    set_avatar();
+                    $(document).ready(function() {
+                        set_avatar();
+                     }); 
              });
              $("#color1").click(function(){
                    $('#color0').removeClass('green');
