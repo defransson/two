@@ -272,7 +272,7 @@ function onDeviceReady() {
  
         }
  
-/*        function uploadPhoto(imageURI) {
+        function uploadPhoto(imageURI) {
             var options = new FileUploadOptions();
             options.fileKey="file";
             options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
@@ -289,7 +289,7 @@ function onDeviceReady() {
           
             var ft = new FileTransfer();
             ft.upload(imageURI, ("https://www.kubary.se/two/php/upload.php"), win, fail, options,true);
-        }*/
+        }
  
         function win(r) {
             /*console.log("Code = " + r.responseCode);
@@ -299,9 +299,9 @@ function onDeviceReady() {
             set_avatar();
         }
  
-       /* function fail(error) {
-            alert("An error has occurred: Code = " = error.code);
-        } */
+       function fail(error) {
+            alert("An error has occurred!");
+        } 
 /*        function uploadFromGallery() {
 
     // Retrieve image file location from specified source
