@@ -347,6 +347,8 @@ function fail(error) {
                             data:{ user: email1},
             success: function(result){
                     $("#avatar").attr('src',result);
+                    $kalle=$("#avatar").attr('src');
+                    alert(kalle);
             }});
 
     }
