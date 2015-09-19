@@ -279,8 +279,8 @@ function onDeviceReady() {
                 Connection: "close"
             }
             var params = new Object();
-            params.value1 = "test";
-            params.value2 = "param";
+            params.value1 = email1;
+            //params.value2 = "param";
  
             options.params = params;
             options.chunkedMode = false;
