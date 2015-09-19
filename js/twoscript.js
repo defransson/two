@@ -116,13 +116,11 @@ function init_click(){
              });
              $("#avatar").click(function(){
                     getImage();
-                    $(document).ready(function() {
-                        set_avatar();
-                     }); 
-             });
+            });
              $("#color1").click(function(){
-                   $('#color0').removeClass('green');
-                    $('#color1').addClass('orange');
+                   //$('#color0').removeClass('green');
+                    $//('#color1').addClass('orange');
+                    set_avatar();
              });
               $("#color0").click(function(){
                    $('#color0').addClass('green');
