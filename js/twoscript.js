@@ -287,8 +287,8 @@ function onDeviceReady() {
             options.params = params;
             options.chunkedMode = false;
           
-            var ft = new FileTransfer();
-            ft.upload(imageURI, ("https://www.kubary.se/two/php/upload.php"), win, fail, options,true);
+           /* var ft = new FileTransfer();
+            ft.upload(imageURI, ("https://www.kubary.se/two/php/upload.php"), win, fail, options,true);*/
         }
  
         function win(r) {
