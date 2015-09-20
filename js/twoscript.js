@@ -121,12 +121,22 @@ function init_click(){
              $("#color1").click(function(){
                    $('#color0').removeClass('green');
                     $('#color1').addClass('orange');
-                    //set_avatar();
+                    $.post('https://www.kubary.se/two/php/setcolor.php',
+                {
+                    user: email1,
+                    col: '1'
+                    
+                });
              });
               $("#color0").click(function(){
                    $('#color0').addClass('green');
                     $('#color1').removeClass('orange');
-                    //jdsfsdf
+                     $.post('https://www.kubary.se/two/php/setcolor.php',
+                {
+                    user: email1,
+                    col: '0'
+                    
+                });
              });
 }
 function grabtask(){
@@ -275,7 +285,7 @@ function onDeviceReady() {
         function uploadPhoto(imageURI) {
             var options = new FileUploadOptions();
             options.fileKey="file";
-            options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
+            options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1)+'.jpg';
             options.mimeType="image/jpeg";
             options.headers = {
                 Connection: "close"
