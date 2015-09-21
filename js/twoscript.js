@@ -121,6 +121,10 @@ function init_click(){
              $("#color1").click(function(){
                    $('#color0').removeClass('green');
                     $('#color1').addClass('orange');
+                    $('#user2').removeClass('orange');
+                      $('#user1').removeClass('green');
+                      $('#user2').addClass('green');
+                    $('#user1').addClass('orange');
                     $.post('https://www.kubary.se/two/php/setcolor.php',
                 {
                     user: email1,
@@ -130,7 +134,11 @@ function init_click(){
              });
               $("#color0").click(function(){
                    $('#color0').addClass('green');
+                   $('#user1').addClass('green');
+                    $('#user2').addClass('orange');
                     $('#color1').removeClass('orange');
+                    $('#user1').removeClass('orange');
+                      $('#user2').removeClass('green');
                      $.post('https://www.kubary.se/two/php/setcolor.php',
                 {
                     user: email1,
@@ -205,7 +213,7 @@ function onDeviceReady() {
       
     }
     function loginform(){
-        $("#commontodo").html("<form> <label for='myusername'>Email</label> <input name='myusername' type='text' id='myusername' maxlength='30' autocomplete='off'><p id='userremind'>Please input email</p> <br><label for='mypassword'>Password</label><input name='mypassword' type='password' id='mypassword' maxlength='100'> <p id='passremind'>Please input password</p><br><button id='checkloginbutton' type='button'>Login</button> </form>");
+        $("#commontodo").html("<form> <label for='myusername'>Email</label> <input name='myusername' type='text' id='myusername' maxlength='30' autocomplete='off'><p id='userremind'>Please input email</p> <br><label for='mypassword'>Password</label><input name='mypassword' type='password' id='mypassword' maxlength='100'> <p id='passremind'>Please input password</p><br><button id='checkloginbutton' type='button' class='btngreen'>Login</button> </form>");
 //$("#commontodo").html("<strong>Kalle</strong>");
         init_click();
         $("#userremind").hide();
@@ -309,7 +317,7 @@ function onDeviceReady() {
             set_avatar();
         }
  
-       function fail(error) {
+       function fail()) {
             alert("An error has occurred!");
         } 
 /*        function uploadFromGallery() {
