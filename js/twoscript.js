@@ -317,7 +317,7 @@ function onDeviceReady() {
             set_avatar();
         }
  
-       function fail(error)) {
+       function fail() {
             alert("An error has occurred!");
         } 
 /*        function uploadFromGallery() {
