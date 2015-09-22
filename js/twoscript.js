@@ -146,6 +146,10 @@ function init_click(){
                     
                 });
              });
+              $("#colorconfirm").click(function(){
+                            $("#commontodo").html("<form> <label for='invite'>Please enter your friend's email</label> <input name='invite' type='email' id='invite' maxlength='40' autocomplete='off'><p id='inviteremind'>Please input email</p> <br><button id='invitebutton' type='button' class='btngreen'>Invite friend</button> </form>");
+
+             });
 }
 function grabtask(){
 	
