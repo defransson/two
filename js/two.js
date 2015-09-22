@@ -1,4 +1,5 @@
 var user1="";
+var user2="";
 var taskid="";
 var couplename="";
 var idnr;
@@ -6,7 +7,7 @@ $(document).ready(function() {
     	
     	
             couplename="test";
-	listtasks();
+	//listtasks();
     	init();
     	$("#addtask").hide();
 
@@ -37,7 +38,7 @@ function listtasks(){
 	$("#commontodo").load("https://www.kubary.se/two/php/listtasks.php",{couple:couplename});
 }
 function init_click(){
-	user1="test1";
+	
 	
 	$("#addtask").hide();
 	$(".new").click(function(){
@@ -98,6 +99,15 @@ function init_click(){
     		
     		
     	});
+                $("#loginbutton").click(function(){
+                   /*$.ajax({
+                    url: "https://www.kubary.se/two/php/loginform.php", 
+                    success: function(result){
+                            $("#commontodo").html(result);
+                    }});*/
+                    //$("#commontodo").html("result");
+                    alert("HEJ");
+        });
 }
 function grabtask(){
 	
@@ -121,6 +131,7 @@ function finish_task(){
 function list_user_tasks(){
 	$.ajax({
     		url: "https://www.kubary.se/two/php/listusertasks.php", 
+                            data:{user: user1},
     		success: function(result){
         			$("#commontodo").html(result);
     		}});
@@ -139,11 +150,17 @@ function chart_month(){
         			$("#commontodo").html(result);
     		}});
 }
+function testet(){
+    $("#commontodo").load("https://www.kubary.se/two/php/finduser.php",{uuid:idnr});
+    init_click();
+    $("#deviceProperties").hide();
+    
+}
 /*** Nedanstående funktion kontrollerar om enhetens är klar ***/
 function init(){
-   idnr = device.uuid;
+  // idnr = device.uuid;
       //testet();
-      alert(idnr);
+      //alert(idnr);
     document.addEventListener("deviceready", onDeviceReady, false);
 }
 
@@ -151,7 +168,7 @@ function init(){
 function onDeviceReady() {
         
       idnr = device.uuid;
-      //testet();
-      alert(idnr);
+      testet();
+      
       
     }

@@ -11,13 +11,12 @@
 		<link rel="stylesheet" href="stilmall.css" />
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
-        <script src="js/two.js"></script>
+        <script src="js/twoscript.js"></script>
          <script src="js/chart.js"></script>
-         <script type="text/javascript"> /*Script for running one of my scripts when the device is ready */
-      document.addEventListener("deviceready", onDeviceReady, false);
-    </script>
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     </head>
     <body>
+        <div id="deviceProperties"></div>
         <div data-role="page" id="index" >
 		<div data-role="header" data-position="fixed" data-theme="f" class="underline header">
 			<img id="toplogo" src="img/two.jpg" alt="two"\>
@@ -34,7 +33,7 @@
 		<div data-role="footer" data-theme="c" data-position="fixed" class="overline  footer">
 			<div data-role="navbar" >
 				<ul>
-					<li id="user1"><img class='footerimg green' src='img/bild.jpg'/></li>
+					<li id="user1"><img class='footerimg green' src='img/avatar.jpg'/></li>
 					<li id="stats"><img  src='img/stats.jpg'/></li>
 					<li id="user2"><img class='footerimg orange' src='img/avatar.jpg'/></li>
 					
@@ -43,68 +42,6 @@
 		</div>
 	</div>
 	
-	<div data-role="page" id="sida2" >
-		<div data-role="header" data-position="fixed" data-theme="f" class="underline">
-			<img id="toplogo" src="two.jpg" alt="two"\>
-			
-		</div>
-		<div data-role="content" data-theme="f" class="overline underline content">
-			<div id="contentcenter">
-			<ul class="maintodo">
-				<li>Shop</li>
-				<li>Mow the lawn</li>
-				<li>Wash the car</li>
-			</ul>
-			</div>
-		</div>
-		<div data-role="footer" data-theme="c" data-position="fixed" class="overline  footer">
-			<div data-role="navbar" >
-				<ul>
-					<li><a href="#sida2" data-transition="pop"  style"white-space:normal">User1</a></li>
-					<li><a href="#sida3" data-transition="pop">Statistik</a></li>
-					<li><a href="#sida4" data-transition="pop">User2</a></li>
-					
-				</ul>
-			</div><!-- /navbar -->
-		</div>
-
-	</div>
-	<div data-role="page" id="sida3" >
-		<div data-role="header" data-position="fixed" data-theme="f" class="underline">
-			<img id="toplogo" src="two.jpg" alt="two"\>
-			
-		</div>
-		<div data-role="content" data-theme="c">
-			
-		</div>
-		<div data-role="footer" data-theme="c" data-position="fixed" class="overline  footer">
-			<div data-role="navbar" >
-				<ul>
-					<li><a href="#sida2" data-transition="pop"  style"white-space:normal">User1</a></li>
-					<li><a href="#sida3" data-transition="pop">Statistik</a></li>
-					<li><a href="#sida4" data-transition="pop">User2</a></li>
-					
-				</ul>
-			</div><!-- /navbar -->
-		</div>
-
-	<div data-role="page" id="sida4" >
-		<div data-role="header" data-position="fixed" data-theme="f" class="underline">
-			<img id="toplogo" src="two.jpg" alt="two"\>
-			
-		</div>
-		<div data-role="content" data-theme="c">
-			
-		</div>
-		<div data-role="footer" data-theme="c" data-position="fixed" class="overline  footer">
-			<div data-role="navbar" >
-				<ul>
-					<li><a href="#sida2" data-transition="pop"  style"white-space:normal">User1</a></li>
-					<li><a href="#sida3" data-transition="pop">Statistik</a></li>
-					<li><a href="#sida4" data-transition="pop">User2</a></li>
-					
-				</ul>
-			</div><!-- /navbar -->
-		</div>
+	
     </body>
     </html>
