@@ -105,7 +105,7 @@ text-decoration: underline;
 label{
 	width: 100px;
 }
-btngreen {
+.btngreen {
 	-moz-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
 	box-shadow:inset 0px 1px 0px 0px #d9fbbe;
