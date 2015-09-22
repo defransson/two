@@ -121,10 +121,10 @@ function init_click(){
              $("#color1").click(function(){
                    $('#color0').removeClass('green');
                     $('#color1').addClass('orange');
-                    $('#user2').removeClass('orange');
-                      $('#user1').removeClass('green');
-                      $('#user2').addClass('green');
-                    $('#user1').addClass('orange');
+                    $('#user2 img').removeClass('orange');
+                      $('#user1 img').removeClass('green');
+                      $('#user2 img').addClass('green');
+                    $('#user1 img').addClass('orange');
                     $.post('https://www.kubary.se/two/php/setcolor.php',
                 {
                     user: email1,
@@ -134,11 +134,11 @@ function init_click(){
              });
               $("#color0").click(function(){
                    $('#color0').addClass('green');
-                   $('#user1').addClass('green');
-                    $('#user2').addClass('orange');
+                   $('#user1 img').addClass('green');
+                    $('#user2 img').addClass('orange');
                     $('#color1').removeClass('orange');
-                    $('#user1').removeClass('orange');
-                      $('#user2').removeClass('green');
+                    $('#user1 img').removeClass('orange');
+                      $('#user2 img').removeClass('green');
                      $.post('https://www.kubary.se/two/php/setcolor.php',
                 {
                     user: email1,
@@ -148,7 +148,7 @@ function init_click(){
              });
               $("#colorconfirm").click(function(){
                             $("#commontodo").html("<form> <label for='invite'>Please enter your friend's email</label> <input name='invite' type='email' id='invite' maxlength='40' autocomplete='off'><p id='inviteremind'>Please input email</p> <br><button id='invitebutton' type='button' class='btngreen'>Invite friend</button> </form>");
-
+                            $("#inviteremind").hide();
              });
 }
 function grabtask(){
